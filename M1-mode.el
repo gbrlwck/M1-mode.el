@@ -5,6 +5,7 @@
    '( "\\(\\(#\\|;\\).*\\)$" . font-lock-comment-face)  ;; comments
    '( "^DEFINE"              . font-lock-warning-face)  ;; the one KEY word
 
+   '( "\@[a-zA-Z0-9_]+" . font-lock-reference-face)           ;; @ labels
    '( "!\\-?\\([0-9]\\)+"         . font-lock-constant-face)  ;; numbers !-8
    '( "\\.\\([A-F0-9]\\{8\\}\\)"  . font-lock-reference-face) ;; define register numbers .012345678
    '( "\\([A-F0-9]\\{8\\}\\)"     . font-lock-reference-face) ;; define function numbers 012345678
